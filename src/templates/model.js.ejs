@@ -1,0 +1,25 @@
+/* Importando o banco mongo */
+const mongoose = require('mongoose')
+//const moogoosePaginate = require('mongoose-paginate')
+
+/* Construindo nosso Model */
+const <%=props.name%>Schema = new mongoose.Schema({
+	title:{
+		type: String,
+		required: true
+	},
+	description: {
+		type: String,
+		required: true
+	},
+	createdAt: {
+		type: Date,
+		default: Date.now
+	}
+})
+
+/* paginação do model */
+//<%=props.name%>Schema.plugin(mongoosePaginate)
+
+/* Exportando nosso Model */ 
+mongoose.model('<%=props.name%>', <%=props.name%>Schema)

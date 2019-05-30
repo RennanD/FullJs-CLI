@@ -1,0 +1,45 @@
+/* Conectando ao banco de dados da aplicação */
+const mongoose = require('../mongoose')
+
+/* Importando nosso Model */
+const <%=props.name%> = mongoose.model('<%=props.name%>')
+
+/* Exportando nosso Controller */
+module.exports = {
+	
+	async list(req, res){
+
+		const { page = 1 } = req.query
+
+		const <%=props.name%>s = await <%=props.name%>.paginate({},{page, limit:10})
+
+		return res.json(<%=props.name%>s)
+	},
+
+	async show(req, res){
+		const <%=props.name%>s = await <%=props.name%>.findById(req.params.id)
+
+		return res.json(Models)
+	},
+
+	async store(req, res){
+
+		const <%=props.name%>s = await <%=props.name%>.create(req.body)
+
+		return res.json(<%=props.name%>s)
+	},
+
+	async update(req,res){
+		const <%=props.name%>s = await <%=props.name%>.findByIdAndUpdate(req.params.id, req.body, {
+			new: true
+		})
+
+		return res.json(<%=props.name%>s)
+	},
+
+	async destroy(req, res){
+		await <%=props.name%>.findByIdAndRemove(req.params.id)
+
+		return res.json('msg: arquivo excluído com sucesso!')
+	}
+}

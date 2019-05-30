@@ -1,0 +1,21 @@
+/*Importando as rotas do Express */
+const routes = require('express').Router()
+
+/* Importando os controllers da aplicação */
+const Controler = require('./controllers/Controller')
+
+/* Rotas de busca da api (get) */
+routes.get('/',Controller.list)
+routes.get('/show/:id',Controller.show)
+
+/* Rotas de adição da api (post) */
+routes.post('/post', Controller.store)
+
+/* Rotas de edição da api (put) */
+routes.put('/updade/:id', Controller.updade)
+
+/* Rotas de exclusão da api (delete) */
+routes.delete('/delete/:id',Controller.destroy)
+
+/* Exportando arquivo de rotas */
+module.exports = routes
