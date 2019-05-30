@@ -16,14 +16,14 @@ Using Cli:
 //Node with Express
 
 $ fulljs express (create a inital aplication using express)
-$ fulljs init-db (Create a inital database connection)
-$ fulljs model (Create a Model in aplication)
-$ fulljs controller (Create a Controller for model in aplication)
+$ fulljs init-db database-name (Create a inital database connection)
+$ fulljs model model-name" (Create a Model in aplication)
+$ fulljs controller controller-name (Create a Controller for model in aplication)
 
 //React
 
-$ fulljs component (Create a component React)
-$ fulljs page (Create a page React)
+$ fulljs component component-name (Create a component React)
+$ fulljs page page-name (Create a page React)
 ```
 
 # License
