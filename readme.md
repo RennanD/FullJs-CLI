@@ -1,6 +1,6 @@
 # fulljs CLI
 
-A CLI for node with express and react.
+A CLI for node with express and react :) .
 
 
 
