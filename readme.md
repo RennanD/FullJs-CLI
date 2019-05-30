@@ -1,22 +1,29 @@
 # fulljs CLI
 
-A CLI for fulljs.
+A CLI for node with express e react.
 
-## Customizing your CLI
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
 
-## Publishing to NPM
+## How to use
 
-To package your CLI up for NPM, do this:
+Install package(as admin user): 
 
 ```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+$ npm install -g fulljs-rd // yarn global add fulljs-rd
+
+Using Cli:
+
+//Node with Express
+
+$ fulljs express (create a inital aplication using express)
+$ fulljs init-db (Create a inital database connection)
+$ fulljs model (Create a Model in aplication)
+$ fulljs controller (Create a Controller for model in aplication)
+
+//React
+
+$ fulljs component (Create a component React)
+$ fulljs page (Create a page React)
 ```
 
 # License
