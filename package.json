@@ -1,8 +1,7 @@
 {
-  "name": "fulljs",
+  "name": "fulljs-rd",
   "version": "0.0.1",
   "description": "fulljs CLI",
-  "private": true,
   "bin": {
     "fulljs": "bin/fulljs"
   },
