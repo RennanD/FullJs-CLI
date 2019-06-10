@@ -2,17 +2,17 @@
 const express = require('express')
 
 /* Importando arquivo de rotas */
-const route = require('./routes') 
+const route = require('./routes')
 
 /* Importando o Cors */
-// const cors = require('cors')
+const cors = require('cors')
 
 
 /* Iniciando nossa aplicação com Express */
 const app = express()
 
 /* Permissões da api */
-//app.use(cors()) 
+app.use(cors())
 
 /* Iniciando as rotas da aplicação */
 app.use(route)

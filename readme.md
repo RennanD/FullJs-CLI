@@ -6,10 +6,17 @@ A CLI for node with express and react :) .
 
 ## How to use
 
-Install package(as admin user): 
+Install package(as admin user):
 
 ```shell
 $ npm install -g fulljs-rd // yarn global add fulljs-rd
+
+To use this CLI, install the libs:
+  *express
+  *cors
+  *mongoose
+  *mongoose-paginate
+  *riquire-dir
 
 Using Cli:
 
@@ -29,4 +36,3 @@ $ fulljs page page-name (Create a page React)
 # License
 
 MIT - see LICENSE
-

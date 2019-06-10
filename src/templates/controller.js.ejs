@@ -6,7 +6,7 @@ const <%=props.name%> = mongoose.model('<%=props.name%>')
 
 /* Exportando nosso Controller */
 module.exports = {
-	
+
 	async list(req, res){
 
 		const { page = 1 } = req.query
@@ -19,7 +19,7 @@ module.exports = {
 	async show(req, res){
 		const <%=props.name%>s = await <%=props.name%>.findById(req.params.id)
 
-		return res.json(Models)
+		return res.json(<%=props.name%>s)
 	},
 
 	async store(req, res){

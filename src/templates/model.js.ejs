@@ -1,6 +1,6 @@
 /* Importando o banco mongo */
 const mongoose = require('mongoose')
-//const moogoosePaginate = require('mongoose-paginate')
+const moogoosePaginate = require('mongoose-paginate')
 
 /* Construindo nosso Model */
 const <%=props.name%>Schema = new mongoose.Schema({
@@ -19,7 +19,7 @@ const <%=props.name%>Schema = new mongoose.Schema({
 })
 
 /* paginação do model */
-//<%=props.name%>Schema.plugin(mongoosePaginate)
+<%=props.name%>Schema.plugin(mongoosePaginate)
 
-/* Exportando nosso Model */ 
+/* Exportando nosso Model */
 mongoose.model('<%=props.name%>', <%=props.name%>Schema)
